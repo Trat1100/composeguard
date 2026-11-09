@@ -61,4 +61,4 @@ GitHub Actions runs the test suite on Python 3.11 and 3.12.
 - This is a static checker, not a replacement for Docker/Compose validation, image scanning, runtime policy enforcement, or a host firewall review.
 - Environment interpolation is treated as external configuration. The tool does not inspect the values supplied by the shell or a `.env` file.
 - Compose extensions and custom YAML tags may not be supported.
-- No license is included pending the owner's license choice.
+- Licensed under MIT; see the included `LICENSE` file.
