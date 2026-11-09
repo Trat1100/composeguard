@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "composeguard"
+version = "0.1.0"
+description = "Static security and reliability checks for Docker Compose files"
+requires-python = ">=3.11"
+dependencies = ["PyYAML>=6.0.2"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.3", "setuptools>=69", "wheel"]
+
+[project.scripts]
+composeguard = "composeguard.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["composeguard*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
