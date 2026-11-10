@@ -1,5 +1,11 @@
 # ComposeGuard
 
+## Live demo
+
+![ComposeGuard actual command-line output](docs/screenshots/composeguard-live-demo.svg)
+
+Live CLI output from a local run against synthetic Compose YAML. ComposeGuard reports the secret-like variable name without exposing its value.
+
 ComposeGuard is a small command-line audit tool for Docker Compose files. It catches common container configuration risks before a stack is deployed, including privileged containers, host control-socket mounts, plaintext secret-like environment values, broadly published ports, mutable image tags, and missing health checks.
 
 ## What it checks
